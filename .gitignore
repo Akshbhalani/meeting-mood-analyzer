@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large files
+models/*
+data/*
+
+# System files
+.DS_Store
+Thumbs.db
