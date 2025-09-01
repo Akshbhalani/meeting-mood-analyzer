@@ -1,19 +1,17 @@
-# Python virtual environments
+# Virtual environment
 venv/
 .env/
 
-# Compiled Python files
+# Python cache
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Large files
-models/*
-data/*
+# Large data / models
+models/
+data/
 
 # System files
 .DS_Store
