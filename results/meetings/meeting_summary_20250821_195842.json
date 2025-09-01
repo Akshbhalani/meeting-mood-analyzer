@@ -1,0 +1,22 @@
+{
+    "text_polarity": 0.22727272727272727,
+    "text_subjectivity": 0.5454545454545454,
+    "transcript": "{\n    \"sentiment\": \"positive\",\n    \"polarity_score\": 0.375\n}",
+    "video_emotions": {
+        "counts": {
+            "neutral": 166,
+            "sad": 26,
+            "angry": 21,
+            "happy": 17,
+            "surprise": 8
+        },
+        "percentages": {
+            "neutral": 69.75,
+            "sad": 10.92,
+            "angry": 8.82,
+            "happy": 7.14,
+            "surprise": 3.36
+        },
+        "dominant": "neutral"
+    }
+}

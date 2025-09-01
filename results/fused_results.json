@@ -1,0 +1,218 @@
+{
+    "text": {
+        "sentiments": [
+            {
+                "sentence": "John: Good morning everyone, thank you for joining on time",
+                "label": "POSITIVE",
+                "score": 0.9997788071632385
+            },
+            {
+                "sentence": "Let’s start with project updates",
+                "label": "NEGATIVE",
+                "score": 0.9847976565361023
+            },
+            {
+                "sentence": "Alice: Sure, I’ve completed the first draft of the user interface",
+                "label": "POSITIVE",
+                "score": 0.8795434832572937
+            },
+            {
+                "sentence": "I think it looks clean, but I would love to hear your feedback",
+                "label": "POSITIVE",
+                "score": 0.9987329840660095
+            },
+            {
+                "sentence": "Bob: I reviewed it last night, and overall it’s good, but there are a few areas where navigation feels confusing",
+                "label": "POSITIVE",
+                "score": 0.8591206669807434
+            },
+            {
+                "sentence": "Sarah: I agree with Bob",
+                "label": "POSITIVE",
+                "score": 0.9989835619926453
+            },
+            {
+                "sentence": "The design is modern, but maybe we need clearer labels on the buttons",
+                "label": "NEGATIVE",
+                "score": 0.9962852001190186
+            },
+            {
+                "sentence": "Alice: That’s fair, I can revise the labels and add tooltips to guide the user",
+                "label": "POSITIVE",
+                "score": 0.9983755350112915
+            },
+            {
+                "sentence": "John: Excellent teamwork! Small adjustments like that will make the interface much better",
+                "label": "POSITIVE",
+                "score": 0.9995300769805908
+            },
+            {
+                "sentence": "John: Now moving on to the backend progress",
+                "label": "POSITIVE",
+                "score": 0.6257661581039429
+            },
+            {
+                "sentence": "Bob, how are things going?\r\nBob: Honestly, the API integration is taking longer than I expected",
+                "label": "NEGATIVE",
+                "score": 0.998612642288208
+            },
+            {
+                "sentence": "Some of the third-party services have poor documentation",
+                "label": "NEGATIVE",
+                "score": 0.9997803568840027
+            },
+            {
+                "sentence": "Sarah: That’s frustrating",
+                "label": "NEGATIVE",
+                "score": 0.9995554089546204
+            },
+            {
+                "sentence": "Is there any way I can help with testing so we can at least move forward in parallel?\r\nBob: Yes, actually that would be great",
+                "label": "POSITIVE",
+                "score": 0.5437760949134827
+            },
+            {
+                "sentence": "If you can test the endpoints I’ve already deployed, we’ll save some time",
+                "label": "NEGATIVE",
+                "score": 0.9986720085144043
+            },
+            {
+                "sentence": "Sarah: Done, I’ll take that action item",
+                "label": "POSITIVE",
+                "score": 0.9757300615310669
+            },
+            {
+                "sentence": "Alice: I want to raise one concern—the timeline",
+                "label": "NEGATIVE",
+                "score": 0.5392101407051086
+            },
+            {
+                "sentence": "We promised delivery in three weeks, but if integration delays continue, we may miss the deadline",
+                "label": "NEGATIVE",
+                "score": 0.9994389414787292
+            },
+            {
+                "sentence": "John: You’re right, that’s a risk",
+                "label": "POSITIVE",
+                "score": 0.9975746273994446
+            },
+            {
+                "sentence": "Let’s reassess the scope and see what features are essential for version one",
+                "label": "POSITIVE",
+                "score": 0.9771311283111572
+            },
+            {
+                "sentence": "Bob: I can cut a few non-critical endpoints to make sure the main workflow is stable",
+                "label": "POSITIVE",
+                "score": 0.7240099906921387
+            },
+            {
+                "sentence": "Sarah: That sounds like a good compromise",
+                "label": "POSITIVE",
+                "score": 0.9983914494514465
+            },
+            {
+                "sentence": "John: Perfect",
+                "label": "POSITIVE",
+                "score": 0.9998712539672852
+            },
+            {
+                "sentence": "Before we wrap up, let’s quickly check morale",
+                "label": "NEGATIVE",
+                "score": 0.9975972771644592
+            },
+            {
+                "sentence": "How’s everyone feeling about the project overall?\r\nAlice: Optimistic",
+                "label": "POSITIVE",
+                "score": 0.9959369897842407
+            },
+            {
+                "sentence": "It’s a lot of work, but I think we’re moving in the right direction",
+                "label": "POSITIVE",
+                "score": 0.9997979998588562
+            },
+            {
+                "sentence": "Bob: A bit stressed, but I believe once integration is done, the rest will be smoother",
+                "label": "NEGATIVE",
+                "score": 0.9959069490432739
+            },
+            {
+                "sentence": "Sarah: I feel motivated",
+                "label": "POSITIVE",
+                "score": 0.9972514510154724
+            },
+            {
+                "sentence": "I like how we’re supporting each other and finding solutions",
+                "label": "POSITIVE",
+                "score": 0.9998217225074768
+            },
+            {
+                "sentence": "John: Great to hear",
+                "label": "POSITIVE",
+                "score": 0.9998626708984375
+            },
+            {
+                "sentence": "Let’s keep this energy going",
+                "label": "POSITIVE",
+                "score": 0.9952574372291565
+            },
+            {
+                "sentence": "Meeting adjourned",
+                "label": "POSITIVE",
+                "score": 0.5452556610107422
+            }
+        ],
+        "word_freq": {
+            "the": 17,
+            "i": 13,
+            "but": 6,
+            "to": 6,
+            "a": 6,
+            "is": 5,
+            "we": 5,
+            "can": 5,
+            "and": 4,
+            "that": 4,
+            "on": 3,
+            "with": 3,
+            "of": 3,
+            "are": 3,
+            "like": 3,
+            "integration": 3,
+            "in": 3,
+            "good": 2,
+            "you": 2,
+            "for": 2,
+            "project": 2,
+            "think": 2,
+            "it": 2,
+            "would": 2,
+            "there": 2,
+            "few": 2,
+            "labels": 2,
+            "will": 2,
+            "make": 2,
+            "moving": 2,
+            "how": 2,
+            "some": 2,
+            "be": 2,
+            "if": 2,
+            "endpoints": 2,
+            "morning": 1,
+            "thank": 1,
+            "joining": 1,
+            "start": 1,
+            "completed": 1,
+            "first": 1,
+            "draft": 1,
+            "user": 1,
+            "looks": 1,
+            "love": 1,
+            "hear": 1,
+            "your": 1,
+            "reviewed": 1,
+            "last": 1,
+            "overall": 1
+        }
+    }
+}

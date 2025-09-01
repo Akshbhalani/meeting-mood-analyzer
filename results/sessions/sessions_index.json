@@ -1,0 +1,24 @@
+{
+  "sessions": [
+    {
+      "session_id": "20250823_160557_8fcef6",
+      "created_at": "2025-08-23T16:05:58",
+      "overall_mood": "Mixed — text: positive, video: neutral"
+    },
+    {
+      "session_id": "20250823_160812_f2d06a",
+      "created_at": "2025-08-23T16:08:12",
+      "overall_mood": "Driven by text: positive"
+    },
+    {
+      "session_id": "20250823_161355_918461",
+      "created_at": "2025-08-23T16:13:55",
+      "overall_mood": "Mixed — text: positive, video: neutral"
+    },
+    {
+      "session_id": "20250823_161428_c4524b",
+      "created_at": "2025-08-23T16:14:28",
+      "overall_mood": "Driven by text: positive"
+    }
+  ]
+}

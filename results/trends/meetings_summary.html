@@ -1,0 +1,57 @@
+
+    <html>
+    <head>
+        <title>Meeting Trends Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #333; }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+            th { background-color: #f4f4f4; }
+            img { max-width: 100%; margin: 20px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>Meeting Trends Report</h1>
+        <h2>Meeting Records</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>file</th>
+      <th>date</th>
+      <th>text_sentiment</th>
+      <th>video_dominant_emotion</th>
+      <th>overall_mood</th>
+      <th>text_polarity</th>
+      <th>text_subjectivity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>meeting_summary_20250821_191221.json</td>
+      <td>2025-08-21 19:12</td>
+      <td>positive</td>
+      <td>neutral</td>
+      <td>Text suggests positive, while video shows mostly neutral</td>
+      <td>0</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h2>Text Polarity Trend</h2>
+        <img src="trend_text_polarity.png">
+
+        <h2>Video Emotion Distribution</h2>
+        <img src="video_emotion_distribution.png">
+    </body>
+    </html>
+    
