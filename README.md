@@ -47,12 +47,18 @@ pip install -r requirements.txt
 ---
 
 ## **Usage**
+
 Run the analyzer with:
-python app.py \
+    python app.py \
+
   --audio data/audio/meeting.wav \
+
   --video data/video/meeting.mp4 \
+
   --text data/text/transcript.txt \
+  
   --output results/
+
 
 
 CLI Options
@@ -87,4 +93,5 @@ CLI Options
 - Timeline Graphs: Emotion trends across the meeting.
 
 - Reports: HTML & JSON summaries with recommendations.
+
 
