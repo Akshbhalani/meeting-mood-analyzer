@@ -25,29 +25,6 @@ Meetings play a critical role in organizational productivity. However, emotional
 
 ---
 
-##  **Project Structure**
-
-meeting-mood-analyzer/
-│
-├── app.py # Main entry point, orchestrates workflow
-├── analyzer_utils.py # Utility functions for preprocessing & analysis
-├── test_env.py # Unit testing and validation scripts
-│
-├── data/ # Input data storage
-│ ├── audio/ # Meeting audio files (.wav)
-│ ├── video/ # Meeting video files (.mp4)
-│ ├── text/ # Meeting transcripts (.txt)
-│
-├── results/ # Output results
-│ ├── charts/ # Emotion distribution & timeline plots
-│ ├── reports/ # HTML/JSON reports
-│
-├── requirements.txt # Python dependencies
-├── config.json # Configurations (paths, model settings, preferences)
-├── README.md # Project documentation
-
----
-
 ## **Installation**
 
 ### **Prerequisites**
@@ -110,3 +87,4 @@ CLI Options
 - Timeline Graphs: Emotion trends across the meeting.
 
 - Reports: HTML & JSON summaries with recommendations.
+- 
