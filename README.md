@@ -54,7 +54,7 @@ meeting-mood-analyzer/
 - Python **3.8+**  
 - Git  
 
-### **Steps**
+<!-- ### **Steps** -->
 
 # Clone the repository
 git clone https://github.com/Akshbhalani/meeting-mood-analyzer.git
