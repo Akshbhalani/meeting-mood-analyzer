@@ -1,0 +1,11 @@
+text,label,pred_textblob,score_textblob,pred_vader,score_vader
+I think the project is moving in the right direction and I'm really happy with the progress.,positive,positive,0.5428571428571429,positive,0.7778
+"I am worried we might miss the deadline, things feel a bit stressful.",negative,neutral,0.0,negative,-0.7269
+The results look fine to me — overall okay.,neutral,positive,0.3055555555555556,positive,0.4019
+Great job team — amazing progress today!,positive,positive,0.7750000000000001,positive,0.8999
+I'm disappointed with the delays on the backend work.,negative,negative,-0.75,negative,-0.4767
+I'm curious whether the approach will scale.,neutral,neutral,-0.1,positive,0.3182
+The meeting today was productive and encouraging,positive,neutral,0.0,positive,0.5267
+I feel exhausted and frustrated about the bugs,negative,negative,-0.55,negative,-0.7096
+"This was a typical status update, nothing unexpected",neutral,neutral,-0.033333333333333326,neutral,0.0
+We exceeded our sprint goals — fantastic!,positive,positive,0.5,positive,0.5983
