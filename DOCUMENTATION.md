@@ -44,66 +44,78 @@ Emotion Detection:
     |-- Video facial emotion recognition
     |-- Text sentiment analysis
 
-Visualization:
-    |-- Emotion distribution charts
-    |-- Word clouds
+     - To provide an interactive Streamlit-based UI for text analysis and reporting.
+     - To support supervised evaluation using labeled datasets.
     |-- Timeline graphs
 
 Reporting:
     |-- HTML/JSON reports
     |-- Summary and insights
-```
-
-## 4. Data Collection
-
-
+     - **Reporting**: Compiles results into HTML/JSON/PDF reports.
+     - **Streamlit UI**: Interactive web interface for text-only analysis and report download.
+     - **Supervised Evaluation**: Supports evaluation with labeled datasets and confusion matrix visualization.
 The system collects data from multiple sources, each requiring specific handling and storage:
 
 - **Audio**: Meeting audio is recorded and stored as WAV files. These files are typically captured using microphones during online or in-person meetings. The audio data is crucial for detecting vocal emotions such as tone, pitch, and intensity.
 
 - **Video**: Frames are captured from meeting videos and stored as images in the `captured_frames/` directory. Video data allows for facial emotion recognition, body language analysis, and context understanding. Frame extraction is performed at regular intervals to ensure representative sampling.
+     - **Streamlit Web Interface**: Run `app.py` to launch an interactive dashboard for text transcript analysis, visualizations, and PDF report export.
+     - **Command-Line Interface (CLI)**: For multimodal analysis, run scripts in the `src/` folder with arguments specifying input data and output preferences.
+     - **Configuration**: Settings for data paths, model selection, and visualization options are managed via configuration files or command-line flags.
+     - **Output**: Results are saved in the `results/` folder, with visualizations and reports accessible for review.
 
-- **Text**: Transcripts are generated from audio using speech-to-text algorithms or provided directly by meeting participants. Text data is used for sentiment analysis and keyword extraction.
+    ### Example Streamlit Usage
+    ```bash
+    streamlit run app.py
+    ```
 
-Data is organized in the `data/` folder, with subfolders for each type, ensuring easy access and modular processing. The structure supports scalability for large meetings and multiple sessions.
+    ### Example CLI Usage
+    ```bash
+    python src/analyze_text.py --input data/raw/meeting_transcript.txt --output data/processed/sentiment_results.json
+    python src/analyze_video.py
+    python src/analyze_transcript.py
+    python src/fuse_modalities.py
+    ```
 
-## 5. Data Preprocessing
-
-Preprocessing is a critical step to ensure data quality and reliability for emotion analysis. Each data type undergoes specific preprocessing steps:
+    ### Supervised Evaluation
+    ```bash
+    python src/evaluate_supervised.py data/test/sst2_sample.csv results/sst2_supervised
+    ```
 
 ### Audio Preprocessing
 - **Noise Reduction**: Removes background noise using digital filters (e.g., spectral gating).
 - **Segmentation**: Splits audio into manageable chunks for analysis.
 - **Feature Extraction**: Extracts features such as MFCCs (Mel Frequency Cepstral Coefficients), pitch, energy, and zero-crossing rate.
-
-### Video Preprocessing
-- **Frame Extraction**: Selects frames at regular intervals or based on scene changes.
+     - `analyzer_utils.py`: Utility functions for text preprocessing, sentiment analysis (TextBlob, VADER), evaluation metrics, word cloud generation, and PDF report export.
+     - `app.py`: Streamlit web app for interactive transcript analysis, visualization, and report download.
+     - `src/analyze_text.py`: CLI script for text sentiment analysis and JSON output.
+     - `src/analyze_video.py`: Video emotion analysis using FER and OpenCV, outputs CSV logs.
+     - `src/analyze_transcript.py`: Transformer-based emotion classification for transcripts.
+     - `src/fuse_modalities.py`: Combines results from text, audio, and video for overall meeting mood.
+     - `src/evaluate_supervised.py`: Supervised baseline evaluation with metrics, confusion matrix, and PDF report.
+     - `test_env.py`: Environment test script for verifying NLP dependencies.
 - **Face Detection**: Uses algorithms (e.g., Haar cascades, Dlib, or deep learning models) to locate faces in frames.
 - **Normalization**: Adjusts brightness, contrast, and scales images for consistent analysis.
 
 ### Text Preprocessing
 - **Cleaning**: Removes filler words, punctuation, and corrects spelling errors.
-- **Tokenization**: Splits text into words or sentences.
-- **Stopword Removal**: Eliminates common words that do not contribute to sentiment.
-- **Lemmatization/Stemming**: Reduces words to their base forms.
+     - Streamlit sidebar for report download and optional evaluation dataset upload.
 
 ## 6. Emotion Detection Algorithms
 
 The core of the system is emotion detection, which leverages machine learning and natural language processing techniques:
 
-### Audio Emotion Analysis
-- **Feature-Based Classification**: Uses extracted audio features to classify emotions (e.g., happy, sad, angry) using models like SVM, Random Forest, or deep neural networks.
-- **Pre-trained Models**: May use models trained on emotion-labeled datasets (e.g., RAVDESS, EmoDB).
+     - Example results in the `results/` folder (charts, reports, word clouds, PDF exports).
+     - Screenshots or snippets of HTML/JSON/PDF reports.
+     - Example confusion matrix and evaluation metrics from supervised baseline.
 
 ### Video Facial Emotion Recognition
 - **Face Landmark Detection**: Identifies key facial points (eyes, mouth, eyebrows).
 - **Expression Classification**: Applies CNNs (Convolutional Neural Networks) to classify facial expressions into emotions.
 - **Temporal Analysis**: Tracks emotion changes over time using sequential models (e.g., LSTM).
-
-### Text Sentiment Analysis
-- **Lexicon-Based Methods**: Uses sentiment dictionaries to score text.
+     - v1.3: Added Streamlit UI for text-only analysis and PDF export
+     - v1.4: Added supervised evaluation and confusion matrix visualization
 - **Machine Learning Models**: Trains classifiers (e.g., Logistic Regression, Naive Bayes) on labeled sentiment data.
-- **Deep Learning**: Utilizes transformers (e.g., BERT) for advanced sentiment and emotion classification.
 
 ## 7. Visualization & Reporting
 
